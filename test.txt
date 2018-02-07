@@ -1,0 +1,37 @@
+/Documents/git$ git init
+/Documents/git$ git status
+
+/Documents/git$ touch test.txt
+/Documents/git$ git status
+/Documents/git$ git add test.txt
+/Documents/git$ git status
+/Documents/git$ git commit -m "toto"
+/Documents/git$ git remote add origin https://github.com/ixifra/PA105.git
+/Documents/git$ git push -u origin master
+
+msg erreur:
+	 ! [rejected]        master -> master (non-fast-forward)
+
+/Documents/git$ git pull => KO
+message: 
+	warning: no common commits
+	remote: Counting objects: 3, done.
+	remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+	Dépaquetage des objets: 100% (3/3), fait.
+	Depuis https://github.com/ixifra/PA105
+	 * [nouvelle branche] master     -> origin/master
+	Pas d'information de suivi distant pour la branche actuelle.
+	Veuillez spécifier une branche avec laquelle fusionner.
+	Référez-vous à git-pull(1) pour de plus amples détails.
+
+	    git pull <remote> <branch>
+
+	Si vous souhaitez indiquer l'information de suivi distant pour cette branche, vous pouvez 		le faire avec :
+
+	    git branch --set-upstream-to=origin/<branche> master
+	 
+avec --force OK:
+/Documents/git$ git push origin master --force
+
+
+
