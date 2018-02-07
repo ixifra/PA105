@@ -33,5 +33,15 @@ message:
 avec --force OK:
 /Documents/git$ git push origin master --force
 
+Récuperer fichier de github d'un autre collaborateur:
+1)on crée un dossier dedié
+
+2)git clone https://github.com/hhenriquespereira/essai.git
+3) cd sur le repertoire ou se trouve le fichier:
+~/Documents/herve$ cd essai/
+3)~/Documents/herve/essai$ git pull
+
+
+
 
 
